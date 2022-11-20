@@ -1,1 +1,1 @@
-# Full_Stack_JavaScript_2
+# Full_Stack_JavaScript
