@@ -59,3 +59,50 @@
     background-color: #433f8d;
     cursor: pointer;
 }
+
+/* Banner Styles */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-text {
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #3C2F60;
+    margin: 5rem 5.5rem 2rem 0;
+    font-weight: 600;
+}
+
+.heading-text span {
+    color: #5955B3;
+}
+
+.description {
+    color: #808080;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    border: none;
+    color: #FFFFFF;
+    background-color: #5955B3;
+    padding: 1.25rem 2.5rem;
+    font-size: 1.25;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color: #433F8D;
+    cursor: pointer;
+}
+
+.banner-container:last-child {
+    margin-top: 5rem;
+}
+
+.banner-container div img{
+    width: 1125px;
+    height: 750px;
+}
