@@ -77,3 +77,47 @@
     color: #BA0CC5;
     cursor: pointer;
 }
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-heading {
+    font-size: 100px;
+    width: 1100px;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 150px;
+}
+
+.hero-description {
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.button-large {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #BA0CC5;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.button-large:hover {
+    background-color: #FFFFFF;
+    color: #BA0CC5;
+    cursor: pointer;
+}
