@@ -1,0 +1,8 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+/* Global Styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
