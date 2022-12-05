@@ -13,3 +13,57 @@
     width: 80%;
     margin: 0 auto;
 }
+
+/* Navbar Section */
+.navbar-container {
+    margin: 50px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.list-item {
+    list-style: none;
+}
+
+.list-item:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon svg {
+    height: 28px;
+} 
+
+.nav-button {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: #808080;
+    padding: 5px 50px;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+}
