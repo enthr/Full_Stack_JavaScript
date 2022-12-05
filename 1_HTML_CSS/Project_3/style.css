@@ -67,3 +67,109 @@
     background-color: #000000;
     color: #FFFFFF;
 }
+
+/* Hero Section */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.square, .star, .globe {
+    position: absolute;
+}
+
+.square {
+    margin-top: 280px;
+    margin-left: 160px;
+    z-index: -1;
+}
+
+.star > img {
+    height: 50px;
+}
+
+.star:nth-child(2n+1) {
+    margin-left: 1400px;
+    margin-top: 25px;    
+}
+
+.star:nth-child(2n) {
+    margin-top: 600px;
+    margin-left: 700px;
+}
+
+.globe {
+    margin-left: 825px;
+    margin-top: -50px;
+}
+
+.hero-container-right {
+    width: 60%;   
+}
+
+.hero-container > div > img {
+    width: 500px;
+}
+
+.hero-heading {
+    font-size: 65px;
+    margin: 150px 0 50px 0;
+}
+
+.hero-description {
+    font-family: 'Poppins', sans-serif;
+    color: #5F5F5F;
+    margin: 0 100px 100px 100px;
+}
+
+.button-email {
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    color: #464646;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+    margin-right: 5px;
+    border-radius: 12px;
+}
+
+.button-email:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button-join {
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #000000;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 12px;
+}
+
+.button-join:hover {
+    cursor: pointer;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.contact-heading {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #464646;
+    margin: 100px 0 20px 0;
+}
+
+.icons > span {
+    margin: 0 10px;
+}
+
+.icons > span:hover {
+    cursor: pointer;
+}
