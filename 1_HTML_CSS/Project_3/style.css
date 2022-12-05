@@ -1,0 +1,9 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+
+/* Global Styles */
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
