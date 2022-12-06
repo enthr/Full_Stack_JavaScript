@@ -1,0 +1,10 @@
+/* Global */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F9F5ED;
+}
