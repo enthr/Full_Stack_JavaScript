@@ -40,3 +40,65 @@ body {
     font-weight: 500;
     color: #3B855B;
 }
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.hero__left-heading {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.hero__left-description {
+    font-weight: 300;
+}
+
+.hero__left-button {
+    border: none;
+    background-color: #3B855B;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+}
+
+.hero__left-button:hover {
+    background-color: #366349;
+    cursor: pointer;
+}
+
+.hero__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;   
+}
+
+.hero__right-img1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.hero__right-img1 img, .hero__right-img2 img {
+    width: 100%;
+}
