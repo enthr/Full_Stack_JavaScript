@@ -14,3 +14,29 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
+/* Navbar */
+.navbar {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar__links li {
+    list-style: none;
+}
+
+.navbar__links li:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: #3B855B;
+}
