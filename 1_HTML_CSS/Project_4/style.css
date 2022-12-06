@@ -102,3 +102,28 @@ body {
 .hero__right-img1 img, .hero__right-img2 img {
     width: 100%;
 }
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }    
+    .navbar, .navbar__links {
+        display: flex;
+        flex-direction: column;
+    } 
+    .hero__left, .hero__right {
+        width: 100%;
+    }
+    .hero__left {
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
