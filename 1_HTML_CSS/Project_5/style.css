@@ -8,3 +8,9 @@
 body {
     background-color: #F0F4F5;
 }
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
