@@ -14,3 +14,35 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+
+/* Navbar */
+.navbar {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.navbar__links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar__links a:hover {
+    color: #20BC7E;
+}
