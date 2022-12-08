@@ -9,3 +9,9 @@ body {
     background-color: #2B2923;
     color: #FFFFFF;
 }
+
+/* Container */
+.container {
+    width: 60%;
+    margin: 3rem auto;
+}
