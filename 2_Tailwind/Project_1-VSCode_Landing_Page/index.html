@@ -8,393 +8,388 @@
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="font-sans">
-        <!-- Container -->
-        <div class="md:w-full">
-
-            <!-- Navbar -->
-            <nav class="bg-[#2C2C32] text-[#FFFFFFCC] lg:sticky lg:top-0">
-                <p class="bg-red-500 text-center font-bold text-[1.2rem] text-white">!!! For Educational Purpose !!!</p>
-                <div class="pt-[1rem] lg:pt-0 lg:w-[65%] lg:mx-auto">
-                    <div class="flex flex-col lg:justify-between lg:items-center lg:flex-row">
-                        <div class="flex flex-col items-center gap-[1.5rem] lg:flex-row">
-                            <a class="flex items-center gap-[0.8rem]" href="index.html">
-                                <img class="h-[24px]" src="./img/logo.png" alt="logo">
-                                <p class="text-white text-[1.25rem]">Visual Studio Code</p>
-                            </a>
-                            <a class="hover:text-white" href="https://code.visualstudio.com/docs">Docs</a>
-                            <a class="hover:text-white" href="https://code.visualstudio.com/updates">Updates</a>
-                            <a class="hover:text-white" href="https://code.visualstudio.com/blogs">Blog</a>
-                            <a class="hover:text-white" href="https://code.visualstudio.com/api">API</a>
-                            <a class="hover:text-white" href="https://marketplace.visualstudio.com/VSCode">Extensions</a>
-                            <a class="hover:text-white" href="https://code.visualstudio.com/docs/supporting/faq">FAQ</a>
-                            <a class="hover:text-white" href="https://code.visualstudio.com/learn">Learn</a>
-                        </div>
-                        <div class="flex items-center mt-[1rem] lg:mt-0">
-                            <div class="w-[60%] flex items-center bg-[#444444] pl-[0.8rem] py-[0.8rem]">
-                                <img class="w-[16px] h-[16px]" src="./img/search.svg" alt="Search">
-                                <input class="bg-[#444444] text-white outline-none mx-[0.5rem] hover:bg-[#525257]" type="text" placeholder="Search Docs">
-                            </div>
-                            <a class="w-[40%] bg-[#0066B8] flex justify-center items-center gap-[0.2rem] py-[0.8rem] lg:px-[1rem] hover:bg-[#005BA4]" href="https://code.visualstudio.com/Download">
-                                <img class="w-[16px] h-[16px]" src="./img/download.svg" alt="Download"> 
-                                <p class="text-white font-bold">Download</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- Notification -->
-            <section class="bg-[#25252B] text-[#CCCCCC]">
-                <div class="w-[95%] mx-auto lg:w-[65%]">
-                    <p class="text-center py-[0.5rem]">
-                        <a class="text-[#0098FF]" href="https://code.visualstudio.com/updates">Version 1.73</a> is now available! Read about the new features and fixes from October.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Main -->
-            <main class="bg-[#2C2C32] text-white">
-                <div class="flex flex-col justify-between py-[2rem] lg:flex-row w-[95%] mx-auto lg:w-[65%]">
-                    <div class="lg:w-[35%] mt-[1.5rem]">
-                        <h1 class="text-center text-[3rem] leading-tight"><span class="font-light">Code editing.</span> Redefined.</h1>
-                        <p class="text-center text-[#FFFFFF99] text-[1.1rem] mt-[0.5rem] mb-[1.5rem]">Free. Built on open source. Runs everywhere.</p>
-                        <div class="flex gap-[0.1rem] my-[0.5rem] w-[75%] mx-auto">
-                            <a href="#" class="w-[85%] bg-[#0066B8] py-[0.5rem] hover:bg-[#005BA4]">
-                                <p class="text-center font-bold">Download for Windows</p>
-                                <p class="text-center text-[0.8rem]">Stable Build</p>
-                            </a>
-                            <a href="#" class="w-[15%] bg-[#0066B8] py-[0.5rem] flex justify-center items-center hover:bg-[#005BA4]"><img class="w-[16px] h-[16px]" src="./img/chevronDown.svg" alt="Chevrondown"></a>
-                        </div>
-                        <p class="text-center text-[0.8rem] bg-[#25252B] my-[0.8rem] py-[0.5rem] rounded-lg w-[75%] mx-auto"><a class="text-[#0098FF] hover:underline" href="https://vscode.dev/">Web</a>, <a class="text-[#0098FF] hover:underline" href="https://code.visualstudio.com/insiders">Insiders edition</a>, or <a class="text-[#0098FF] hover:underline" href="https://code.visualstudio.com/#alt-downloads">other platforms</a></p>
-                        <p class="text-center text-[0.7rem] text-[#ffffff99]">By using VS Code, you agree to its <a class="text-[#0098FF] hover:underline block" href="https://code.visualstudio.com/#home-terms">license and privacy statement.</a></p>
-                    </div>
-                    <div class="lg:w-[65%]">
-                        <img src="./img/home-screenshot-win.png" alt="VSCode">
-                    </div>
-                </div>
-            </main>
-
-            <!-- Features -->
-            <section class="bg-[#FFFFFF] text-[#444444] text-[1.25rem]">
-                <div class="grid grid-cols-2 content-center gap-[1rem] lg:grid-cols-4 w-[95%] mx-auto lg:w-[65%] md:mx-auto">
-                    <a href="#meet-intellisense" class="hover:bg-[#E3E3E3] py-[1.5rem]">
-                        <div style="background-image: url('./img/valueprops.svg');" class="mb-[1rem] w-[5rem] h-[5rem] bg-[length:20.6rem_10.4rem] bg-no-repeat mx-auto hover:bg-[0_-5.325rem]"></div>
-                        <p class="text-center">IntelliSense</p>
-                    </a>
-                    <a href="#powerful-debugging" class="hover:bg-[#E3E3E3] py-[1.5rem]">
-                        <div style="background-image: url('./img/valueprops.svg');" class="mb-[1rem] w-[5rem] h-[5rem] bg-[-5.2rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat mx-auto hover:bg-[-5.2rem_-5.325rem]"></div>
-                        <p class="text-center">Run and Debug</p>
-                    </a>
-                    <a href="#built-in-git" class="hover:bg-[#E3E3E3] py-[1.5rem]">
-                        <div style="background-image: url('./img/valueprops.svg');" class="mb-[1rem] w-[5rem] h-[5rem] bg-[-10.4rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat mx-auto hover:bg-[-10.4rem_-5.325rem]"></div>
-                        <p class="text-center">Built-in Git</p>
-                    </a>
-                    <a href="#hundreds-of-extensions" class="hover:bg-[#E3E3E3] py-[1.5rem]">
-                        <div style="background-image: url('./img/valueprops.svg');" class="mb-[1rem] w-[5rem] h-[5rem] bg-[-15.6rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat mx-auto hover:bg-[-15.6rem_-5.325rem]"></div>
-                        <p class="text-center">Extensions</p>
-                    </a>
-                </div>
-            </section>
-
-            <!-- Reviews -->
-            <section class="bg-[#F5F5F5]">
-                <div class="flex flex-col lg:flex-row gap-[1.5rem] py-[3rem] w-[95%] mx-auto lg:w-[65%] lg:before:content-['\2039'] before:text-[4rem] before:text-[#7B7B7B] before:font-bold lg:after:content-['\203A'] after:text-[4rem] after:text-[#7B7B7B] after:font-bold">
-                    <div class="flex gap-[0.5rem]">
-                        <div class="w-[50%]"><img class="rounded-[50%] w-full" src="./img/profile.jpg" alt="Profile"></div>
-                        <div class="">
-                            <div class="flex gap-[0.3rem] items-center">
-                                <a class="text-[14px] font-bold hover:text-[#137CC2]" href="https://twitter.com/anuragtiwarime">Anurag Tiwari</a>
-                                <p class="text-[12px] text-[#6E6E6E]">@anuragtiwarime</p>
-                            </div>
-                            <p class="text-[1.1rem] font-light">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-[0.5rem]">
-                        <div class="w-[50%]"><img class="rounded-[50%]" src="./img/profile.jpg" alt="Profile"></div>
-                        <div class="">
-                            <div class="flex items-center gap-[0.3rem]">
-                                <a class="text-[14px] font-bold hover:text-[#137CC2]" href="https://twitter.com/anuragtiwarime">Anurag Tiwari</a>
-                                <p class="text-[12px] text-[#6E6E6E]">@anuragtiwarime</p>
-                            </div>
-                            <p class="text-[1.1rem] font-light">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-[0.5rem]">
-                        <div class="w-[50%]"><img class="rounded-[50%]" src="./img/profile.jpg" alt="Profile"></div>
-                        <div class="">
-                            <div class="flex items-center gap-[0.3rem]">
-                                <a class="text-[14px] font-bold hover:text-[#137CC2]" href="https://twitter.com/anuragtiwarime">Anurag Tiwari</a>
-                                <p class="text-[12px] text-[#6E6E6E]">@anuragtiwarime</p>
-                            </div>
-                            <p class="text-[1.1rem] font-light">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Features Explained -->
-            <section class="text-[#444444]">
-                <div class="bg-[#FFFFFF]" id="meet-intellisense">
-                    <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
-                        <div class="md:w-[33%]"><img class="w-full" src="./img/home-intellisense.svg" alt="Intellisense"></div>
-                        <div class="md:w-[60%]">
-                            <p class="mb-[2rem] text-[2rem] font-light">Meet IntelliSense.</p>
-                            <p class="text-[1.2rem] leading-[2.5rem]">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#F5F5F5]" id="powerful-debugging">
-                    <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
-                        <div class="md:order-last md:w-[33%]"><img class="w-full" src="./img/home-debug.svg" alt="Debug"></div>
-                        <div class="md:w-[60%]">
-                            <p class="mb-[2rem] text-[2rem] font-light">Print statement debugging is a thing of the past.</p>
-                            <p class="text-[1.2rem] leading-[2.5rem]">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#FFFFFF]" id="built-in-git">
-                    <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
-                        <div class="md:w-[33%]"><img class="w-full" src="./img/home-git.svg" alt="Git"></div>
-                        <div class="md:w-[60%]">
-                            <p class="mb-[2rem] text-[2rem] font-light">Git commands built-in.</p>
-                            <p class="text-[1.2rem] leading-[2.5rem]">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#F5F5F5]" id="hundreds-of-extensions">
-                    <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
-                        <div class="md:order-last md:w-[33%]">
-                            <a href="https://marketplace.visualstudio.com/VSCode">
-                                <img class="w-full hover:scale-110" src="./img/Hundreds-of-Extensions.png" alt="Extensions">
-                            </a>
-                        </div>
-                        <div class="md:w-[60%]">
-                            <p class="mb-[2rem] text-[2rem] font-light">Extensible and customizable.</p>
-                            <p class="text-[1.2rem] leading-[2.5rem]">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a class="text-[#0071BC] hover:underline" href="https://code.visualstudio.com/docs/editor/extension-marketplace">Learn more about extensions.</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#FFFFFF]">
-                    <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
-                        <div class="md:w-[33%]"><img class="w-full" src="./img/home-azure.svg" alt="Azure"></div>
-                        <div class="md:w-[60%]">
-                            <p class="mb-[2rem] text-[2rem] font-light">Deploy with confidence and ease</p>
-                            <p class="text-[1.2rem] leading-[2.5rem]">With <a class="text-[#0071BC] hover:underline" href="https://azure.microsoft.com/">Microsoft Azure</a> you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, <a class="text-[#0071BC] hover:underline" href="https://code.visualstudio.com/docs/azure/extensions">all from within VS Code.</a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Languages -->
-            <section class="bg-[#F5F5F5] text-[#444444]">
-                <div class="py-[4rem] w-[95%] mx-auto lg:w-[65%]">
-                    <p class="text-center text-[2rem] font-light mt-[1rem] mb-[2rem]">VS Code for</p>
-                    <div class="lg:w-[80%] lg:mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-[2rem] text-[1.1rem]">
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/javascript.svg" alt="JavaScript">
-                            <p class="">JavaScript</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/python.svg" alt="Python">
-                            <p class="">Python</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/java.svg" alt="Java">
-                            <p class="">Java</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/markdown.svg" alt="Markdown">
-                            <p class="">Markdown</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/typescript.svg" alt="TypeScript">
-                            <p class="">TypeScript</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/cpp.svg" alt="C/C++">
-                            <p class="">C/C++</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/json.svg" alt="JSON">
-                            <p class="">JSON</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/powershell.svg" alt="PowerShell">
-                            <p class="">PowerShell</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/html.svg" alt="HTML/CSS">
-                            <p class="">HTML/CSS</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/csharp.svg" alt="C#">
-                            <p class="">C#</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/php.svg" alt="PHP">
-                            <p class="">PHP</p>
-                        </div>
-                        <div class="flex gap-[0.1rem]">
-                            <img src="./img/yaml.svg" alt="YAML">
-                            <p class="">YAML</p>
-                        </div>
-                    </div>
-                    <p class="text-center text-[#0071BC] text-[1.1rem] my-[1.5rem]">
-                        <a class="hover:underline" href="https://marketplace.visualstudio.com/search?target=VSCode&category=Programming%20Languages&sortBy=Installs">and many more languages on the Marketplace...</a>
-                    </p>
-                    <p class="text-center text-white text-[1.25rem] font-bold mt-[4rem] mb-[2rem]">
-                        <a class="bg-[#0066B8] py-[1rem] px-[2rem] hover:bg-[#005BA4]" href="https://code.visualstudio.com/docs">Get Started Now</a>
-                    </p>
-                </div>
-            </section>
-
-            <!-- Download -->
-            <section class="bg-[#FFFFFF]">
-                <div class="py-[4rem] flex flex-col gap-[1rem] lg:gap-0 lg:justify-around w-[95%] mx-auto lg:w-[65%] lg:flex-row">
-                    <div class="flex flex-col items-center">
-                        <div class=""><img class="w-[100px] h-[100px]" src="./img/windows-logo.png" alt="Windows"></div>
-                        <a href="#" class="bg-[#0066B8] text-white text-center mt-[1.5rem] py-[0.5rem] px-[5rem]">
-                            <p class="text-[18px] font-bold"><img class="w-[18px] h-[18px] inline" src="./img/download.svg" alt="Download"> Windows</p>
-                            <p class="text-[12px] text-[#ffffffe6] font-bold mt-[0.5rem]">Windows 8, 10, 11</p>
+    <body class="font-sans w-full">
+        <!-- Navbar -->
+        <nav class="bg-[#2C2C32] text-[#FFFFFFCC] lg:sticky lg:top-0">
+            <p class="bg-red-500 text-center font-bold text-[1.2rem] text-white">!!! For Educational Purpose !!!</p>
+            <div class="pt-[1rem] lg:pt-0 lg:w-[65%] lg:mx-auto">
+                <div class="flex flex-col lg:justify-between lg:items-center lg:flex-row">
+                    <div class="flex flex-col items-center gap-[1.5rem] lg:flex-row">
+                        <a class="flex items-center gap-[0.8rem]" href="index.html">
+                            <img class="h-[24px]" src="./img/logo.png" alt="logo">
+                            <p class="text-white text-[1.25rem]">Visual Studio Code</p>
                         </a>
-                        <div class="mt-[1rem]">
-                            <table class="table-auto text-[12px]">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center text-[1rem] text-[#444444] font-[600]">User Installer</td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x86</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center text-[1rem] text-[#444444] font-[600]">System Installer</td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x86</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center text-[1rem] text-[#444444] font-[600]">.zip</td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x86</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <a class="hover:text-white" href="https://code.visualstudio.com/docs">Docs</a>
+                        <a class="hover:text-white" href="https://code.visualstudio.com/updates">Updates</a>
+                        <a class="hover:text-white" href="https://code.visualstudio.com/blogs">Blog</a>
+                        <a class="hover:text-white" href="https://code.visualstudio.com/api">API</a>
+                        <a class="hover:text-white" href="https://marketplace.visualstudio.com/VSCode">Extensions</a>
+                        <a class="hover:text-white" href="https://code.visualstudio.com/docs/supporting/faq">FAQ</a>
+                        <a class="hover:text-white" href="https://code.visualstudio.com/learn">Learn</a>
                     </div>
-                    <div class="flex flex-col items-center">
-                        <div class=""><img class="w-[100px] h-[100px]" src="./img/linux-logo.png" alt="Windows"></div>
-                        <div class="mt-[1.5rem] flex gap-[0.5rem]">
-                            <a href="#" class="bg-[#0066B8] text-white text-center py-[0.5rem] px-[2.5rem]">
-                                <p class="text-[18px] font-bold"><img class="w-[18px] h-[18px] inline" src="./img/download.svg" alt="Download"> .deb</p>
-                                <p class="text-[12px] text-[#ffffffe6] font-bold mt-[0.5rem]">Debian, Ubuntu</p>
-                            </a>
-                            <a href="#" class="bg-[#0066B8] text-white text-center py-[0.5rem] px-[1.5rem]">
-                                <p class="text-[18px] font-bold"><img class="w-[18px] h-[18px] inline" src="./img/download.svg" alt="Download"> .rpm</p>
-                                <p class="text-[12px] text-[#ffffffe6] font-bold mt-[0.5rem]">Red Hat, Fedora, SUSE</p>
-                            </a>
+                    <div class="flex items-center mt-[1rem] lg:mt-0">
+                        <div class="w-[60%] flex items-center bg-[#444444] pl-[0.8rem] py-[0.8rem]">
+                            <img class="w-[16px] h-[16px]" src="./img/search.svg" alt="Search">
+                            <input class="bg-[#444444] text-white outline-none mx-[0.5rem] hover:bg-[#525257]" type="text" placeholder="Search Docs">
                         </div>
-                        <div class="mt-[1rem]">
-                            <table class="table-auto text-[12px]">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center text-[1rem] text-[#444444] font-[600]">.deb</td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm32</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center text-[1rem] text-[#444444] font-[600]">.rpm</td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm32</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center text-[1rem] text-[#444444] font-[600]">.tar.gz</td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm32</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center text-[1rem] text-[#444444] font-[600]">Snap</td>
-                                        <td colspan="2"><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Snap Store</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class=""><img class="w-[100px] h-[100px]" src="./img/apple-logo.svg" alt="Windows"></div>
-                        <a href="#" class="bg-[#0066B8] text-white text-center mt-[1.5rem] py-[0.5rem] px-[5rem]">
-                            <p class="text-[18px] font-bold"><img class="w-[18px] h-[18px] inline" src="./img/download.svg" alt="Download"> Mac</p>
-                            <p class="text-[12px] text-[#ffffffe6] font-bold mt-[0.5rem]">macOS 10.11+</p>
+                        <a class="w-[40%] bg-[#0066B8] flex justify-center items-center gap-[0.2rem] py-[0.8rem] lg:px-[1rem] hover:bg-[#005BA4]" href="https://code.visualstudio.com/Download">
+                            <img class="w-[16px] h-[16px]" src="./img/download.svg" alt="Download"> 
+                            <p class="text-white font-bold">Download</p>
                         </a>
-                        <div class="mt-[1rem]">
-                            <table class="table-auto text-[12px]">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center text-[1rem] text-[#444444] font-[600]">.zip</td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Universal</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Intel Chip</a></td>
-                                        <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Apple Silicon</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </nav>
 
-            <!-- T&C -->
-            <section class="bg-[#F5F5F5]">
-                <div class="w-[95%] py-[3rem] mx-auto lg:w-[65%]">
-                    <div class="flex flex-col justify-around gap-[1rem] text-[#444444] lg:flex-row">
-                        <div class="text-center">
-                            <p class="text-[21px]">Want new features sooner?</p>
-                            <p class="text-[18px]">Get the <a href="https://code.visualstudio.com/insiders" class="text-[#0071BC] hover:underline">Insiders build</a> instead.</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-[21px]">Use <a href="https://vscode.dev/" class="text-[#0071BC] hover:underline">vscode.dev</a> for quick edits online!</p>
-                            <p class="text-[18px]">GitHub, Azure Repos, and local files.</p>
-                        </div>
+        <!-- Notification -->
+        <section class="bg-[#25252B] text-[#CCCCCC]">
+            <div class="w-[95%] mx-auto lg:w-[65%]">
+                <p class="text-center py-[0.5rem]">
+                    <a class="text-[#0098FF]" href="https://code.visualstudio.com/updates">Version 1.73</a> is now available! Read about the new features and fixes from October.
+                </p>
+            </div>
+        </section>
+
+        <!-- Main -->
+        <main class="bg-[#2C2C32] text-white">
+            <div class="flex flex-col justify-between py-[2rem] lg:flex-row w-[95%] mx-auto lg:w-[65%]">
+                <div class="lg:w-[35%] mt-[1.5rem]">
+                    <h1 class="text-center text-[3rem] leading-tight"><span class="font-light">Code editing.</span> Redefined.</h1>
+                    <p class="text-center text-[#FFFFFF99] text-[1.1rem] mt-[0.5rem] mb-[1.5rem]">Free. Built on open source. Runs everywhere.</p>
+                    <div class="flex gap-[0.1rem] my-[0.5rem] w-[75%] mx-auto">
+                        <a href="#" class="w-[85%] bg-[#0066B8] py-[0.5rem] hover:bg-[#005BA4]">
+                            <p class="text-center font-bold">Download for Windows</p>
+                            <p class="text-center text-[0.8rem]">Stable Build</p>
+                        </a>
+                        <a href="#" class="w-[15%] bg-[#0066B8] py-[0.5rem] flex justify-center items-center hover:bg-[#005BA4]"><img class="w-[16px] h-[16px]" src="./img/chevronDown.svg" alt="Chevrondown"></a>
                     </div>
-                    <div class="text-[12px] text-center text-[#6C6C6C] mt-[5rem]">
-                        <p class="my-[1rem] font-bold">LICENSE AND PRIVACY TERMS</p>
-                        <p class="text-[14px] leading-[2.75] lg:mx-[18rem]">By downloading and using Visual Studio Code, you agree to the <a href="https://code.visualstudio.com/License/" class="text-[#0071BC] hover:underline">license terms</a> and <a href="https://privacy.microsoft.com/privacystatement" class="text-[#0071BC] hover:underline">privacy statement</a>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a href="https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-crash-reporting" class="text-[#0071BC] hover:underline">How to Disable Crash Reporting</a> to learn how to disable it.</p>
+                    <p class="text-center text-[0.8rem] bg-[#25252B] my-[0.8rem] py-[0.5rem] rounded-lg w-[75%] mx-auto"><a class="text-[#0098FF] hover:underline" href="https://vscode.dev/">Web</a>, <a class="text-[#0098FF] hover:underline" href="https://code.visualstudio.com/insiders">Insiders edition</a>, or <a class="text-[#0098FF] hover:underline" href="https://code.visualstudio.com/#alt-downloads">other platforms</a></p>
+                    <p class="text-center text-[0.7rem] text-[#ffffff99]">By using VS Code, you agree to its <a class="text-[#0098FF] hover:underline block" href="https://code.visualstudio.com/#home-terms">license and privacy statement.</a></p>
+                </div>
+                <div class="lg:w-[65%]">
+                    <img src="./img/home-screenshot-win.png" alt="VSCode">
+                </div>
+            </div>
+        </main>
+
+        <!-- Features -->
+        <section class="bg-[#FFFFFF] text-[#444444] text-[1.25rem]">
+            <div class="grid grid-cols-2 content-center gap-[1rem] lg:grid-cols-4 w-[95%] mx-auto lg:w-[65%] md:mx-auto">
+                <a href="#meet-intellisense" class="hover:bg-[#E3E3E3] py-[1.5rem]">
+                    <div style="background-image: url('./img/valueprops.svg');" class="mb-[1rem] w-[5rem] h-[5rem] bg-[length:20.6rem_10.4rem] bg-no-repeat mx-auto hover:bg-[0_-5.325rem]"></div>
+                    <p class="text-center">IntelliSense</p>
+                </a>
+                <a href="#powerful-debugging" class="hover:bg-[#E3E3E3] py-[1.5rem]">
+                    <div style="background-image: url('./img/valueprops.svg');" class="mb-[1rem] w-[5rem] h-[5rem] bg-[-5.2rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat mx-auto hover:bg-[-5.2rem_-5.325rem]"></div>
+                    <p class="text-center">Run and Debug</p>
+                </a>
+                <a href="#built-in-git" class="hover:bg-[#E3E3E3] py-[1.5rem]">
+                    <div style="background-image: url('./img/valueprops.svg');" class="mb-[1rem] w-[5rem] h-[5rem] bg-[-10.4rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat mx-auto hover:bg-[-10.4rem_-5.325rem]"></div>
+                    <p class="text-center">Built-in Git</p>
+                </a>
+                <a href="#hundreds-of-extensions" class="hover:bg-[#E3E3E3] py-[1.5rem]">
+                    <div style="background-image: url('./img/valueprops.svg');" class="mb-[1rem] w-[5rem] h-[5rem] bg-[-15.6rem_0] bg-[length:20.6rem_10.4rem] bg-no-repeat mx-auto hover:bg-[-15.6rem_-5.325rem]"></div>
+                    <p class="text-center">Extensions</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="bg-[#F5F5F5]">
+            <div class="flex flex-col lg:flex-row gap-[1.5rem] py-[3rem] w-[95%] mx-auto lg:w-[65%] lg:before:content-['\2039'] before:text-[4rem] before:text-[#7B7B7B] before:font-bold lg:after:content-['\203A'] after:text-[4rem] after:text-[#7B7B7B] after:font-bold">
+                <div class="flex gap-[0.5rem]">
+                    <div class="w-[50%]"><img class="rounded-[50%] w-full" src="./img/profile.jpg" alt="Profile"></div>
+                    <div class="">
+                        <div class="flex gap-[0.3rem] items-center">
+                            <a class="text-[14px] font-bold hover:text-[#137CC2]" href="https://twitter.com/anuragtiwarime">Anurag Tiwari</a>
+                            <p class="text-[12px] text-[#6E6E6E]">@anuragtiwarime</p>
+                        </div>
+                        <p class="text-[1.1rem] font-light">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
                     </div>
                 </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="bg-[#333333] text-white">
-                <div class="flex flex-col justify-between w-[95%] mx-auto lg:flex-row lg:w-[65%]">
-                    <div class="flex items-center gap-[1.5rem] py-[1.5rem] text-[14px]">
-                        <p class="">Hello from Seattle.</p>
-                        <a href="https://twitter.com/code" class="hover:text-[#A8A0FF]">Follow @code</a>
-                        <div class="text-[11px] flex items-center gap-[0.2rem]">
-                            <a href="https://github.com/Microsoft/vscode/" class="bg-[#EEEEEE] text-[#333333] p-[0.2rem] rounded">
-                                <img src="./img/github.svg" alt="Gihub" class="w-[14px] h-[14px] mx-[0.1rem] inline">
-                                <p class="inline">Star</p>
-                            </a>
-                            <a href="https://github.com/Microsoft/vscode/stargazers" class="bg-[#EEEEEE] text-[#333333] p-[0.2rem] rounded">139,797</a>
+                <div class="flex gap-[0.5rem]">
+                    <div class="w-[50%]"><img class="rounded-[50%]" src="./img/profile.jpg" alt="Profile"></div>
+                    <div class="">
+                        <div class="flex items-center gap-[0.3rem]">
+                            <a class="text-[14px] font-bold hover:text-[#137CC2]" href="https://twitter.com/anuragtiwarime">Anurag Tiwari</a>
+                            <p class="text-[12px] text-[#6E6E6E]">@anuragtiwarime</p>
                         </div>
-                    </div>
-                    <div class="flex gap-[1.5rem] py-[1.5rem] text-[12px]">
-                        <a href="#" class="hover:text-[#A8A0FF]">Support</a>
-                        <a href="https://privacy.microsoft.com/privacystatement" class="hover:text-[#A8A0FF]">Privacy</a>
-                        <a href="https://www.microsoft.com/legal/terms-of-use" class="hover:text-[#A8A0FF]">Terms of Use</a>
-                        <a href="https://code.visualstudio.com/License" class="hover:text-[#A8A0FF]">License</a>
-                        <div>
-                            <a href="https://www.microsoft.com/">
-                                <img class="h-[20px]" src="./img/microsoft-logo.png" alt="Microsoft">
-                            </a>
-                            <p class="">&copy; 2022 Microsoft</p>
-                        </div>
+                        <p class="text-[1.1rem] font-light">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
                     </div>
                 </div>
-            </footer>
+                <div class="flex gap-[0.5rem]">
+                    <div class="w-[50%]"><img class="rounded-[50%]" src="./img/profile.jpg" alt="Profile"></div>
+                    <div class="">
+                        <div class="flex items-center gap-[0.3rem]">
+                            <a class="text-[14px] font-bold hover:text-[#137CC2]" href="https://twitter.com/anuragtiwarime">Anurag Tiwari</a>
+                            <p class="text-[12px] text-[#6E6E6E]">@anuragtiwarime</p>
+                        </div>
+                        <p class="text-[1.1rem] font-light">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
+        <!-- Features Explained -->
+        <section class="text-[#444444]">
+            <div class="bg-[#FFFFFF]" id="meet-intellisense">
+                <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
+                    <div class="md:w-[33%]"><img class="w-full" src="./img/home-intellisense.svg" alt="Intellisense"></div>
+                    <div class="md:w-[60%]">
+                        <p class="mb-[2rem] text-[2rem] font-light">Meet IntelliSense.</p>
+                        <p class="text-[1.2rem] leading-[2.5rem]">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F5F5F5]" id="powerful-debugging">
+                <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
+                    <div class="md:order-last md:w-[33%]"><img class="w-full" src="./img/home-debug.svg" alt="Debug"></div>
+                    <div class="md:w-[60%]">
+                        <p class="mb-[2rem] text-[2rem] font-light">Print statement debugging is a thing of the past.</p>
+                        <p class="text-[1.2rem] leading-[2.5rem]">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#FFFFFF]" id="built-in-git">
+                <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
+                    <div class="md:w-[33%]"><img class="w-full" src="./img/home-git.svg" alt="Git"></div>
+                    <div class="md:w-[60%]">
+                        <p class="mb-[2rem] text-[2rem] font-light">Git commands built-in.</p>
+                        <p class="text-[1.2rem] leading-[2.5rem]">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F5F5F5]" id="hundreds-of-extensions">
+                <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
+                    <div class="md:order-last md:w-[33%]">
+                        <a href="https://marketplace.visualstudio.com/VSCode">
+                            <img class="w-full hover:scale-110" src="./img/Hundreds-of-Extensions.png" alt="Extensions">
+                        </a>
+                    </div>
+                    <div class="md:w-[60%]">
+                        <p class="mb-[2rem] text-[2rem] font-light">Extensible and customizable.</p>
+                        <p class="text-[1.2rem] leading-[2.5rem]">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a class="text-[#0071BC] hover:underline" href="https://code.visualstudio.com/docs/editor/extension-marketplace">Learn more about extensions.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#FFFFFF]">
+                <div class="py-[4rem] flex flex-col md:flex-row justify-between w-[95%] mx-auto md:w-[65%]">
+                    <div class="md:w-[33%]"><img class="w-full" src="./img/home-azure.svg" alt="Azure"></div>
+                    <div class="md:w-[60%]">
+                        <p class="mb-[2rem] text-[2rem] font-light">Deploy with confidence and ease</p>
+                        <p class="text-[1.2rem] leading-[2.5rem]">With <a class="text-[#0071BC] hover:underline" href="https://azure.microsoft.com/">Microsoft Azure</a> you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, <a class="text-[#0071BC] hover:underline" href="https://code.visualstudio.com/docs/azure/extensions">all from within VS Code.</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="bg-[#F5F5F5] text-[#444444]">
+            <div class="py-[4rem] w-[95%] mx-auto lg:w-[65%]">
+                <p class="text-center text-[2rem] font-light mt-[1rem] mb-[2rem]">VS Code for</p>
+                <div class="lg:w-[80%] lg:mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-[2rem] text-[1.1rem]">
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/javascript.svg" alt="JavaScript">
+                        <p class="">JavaScript</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/python.svg" alt="Python">
+                        <p class="">Python</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/java.svg" alt="Java">
+                        <p class="">Java</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/markdown.svg" alt="Markdown">
+                        <p class="">Markdown</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/typescript.svg" alt="TypeScript">
+                        <p class="">TypeScript</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/cpp.svg" alt="C/C++">
+                        <p class="">C/C++</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/json.svg" alt="JSON">
+                        <p class="">JSON</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/powershell.svg" alt="PowerShell">
+                        <p class="">PowerShell</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/html.svg" alt="HTML/CSS">
+                        <p class="">HTML/CSS</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/csharp.svg" alt="C#">
+                        <p class="">C#</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/php.svg" alt="PHP">
+                        <p class="">PHP</p>
+                    </div>
+                    <div class="flex gap-[0.1rem]">
+                        <img src="./img/yaml.svg" alt="YAML">
+                        <p class="">YAML</p>
+                    </div>
+                </div>
+                <p class="text-center text-[#0071BC] text-[1.1rem] my-[1.5rem]">
+                    <a class="hover:underline" href="https://marketplace.visualstudio.com/search?target=VSCode&category=Programming%20Languages&sortBy=Installs">and many more languages on the Marketplace...</a>
+                </p>
+                <p class="text-center text-white text-[1.25rem] font-bold mt-[4rem] mb-[2rem]">
+                    <a class="bg-[#0066B8] py-[1rem] px-[2rem] hover:bg-[#005BA4]" href="https://code.visualstudio.com/docs">Get Started Now</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Download -->
+        <section class="bg-[#FFFFFF]">
+            <div class="py-[4rem] flex flex-col gap-[1rem] lg:gap-0 lg:justify-around w-[95%] mx-auto lg:w-[65%] lg:flex-row">
+                <div class="flex flex-col items-center">
+                    <div class=""><img class="w-[100px] h-[100px]" src="./img/windows-logo.png" alt="Windows"></div>
+                    <a href="#" class="bg-[#0066B8] text-white text-center mt-[1.5rem] py-[0.5rem] px-[5rem]">
+                        <p class="text-[18px] font-bold"><img class="w-[18px] h-[18px] inline" src="./img/download.svg" alt="Download"> Windows</p>
+                        <p class="text-[12px] text-[#ffffffe6] font-bold mt-[0.5rem]">Windows 8, 10, 11</p>
+                    </a>
+                    <div class="mt-[1rem]">
+                        <table class="table-auto text-[12px]">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center text-[1rem] text-[#444444] font-[600]">User Installer</td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x86</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center text-[1rem] text-[#444444] font-[600]">System Installer</td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x86</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center text-[1rem] text-[#444444] font-[600]">.zip</td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x86</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class=""><img class="w-[100px] h-[100px]" src="./img/linux-logo.png" alt="Windows"></div>
+                    <div class="mt-[1.5rem] flex gap-[0.5rem]">
+                        <a href="#" class="bg-[#0066B8] text-white text-center py-[0.5rem] px-[2.5rem]">
+                            <p class="text-[18px] font-bold"><img class="w-[18px] h-[18px] inline" src="./img/download.svg" alt="Download"> .deb</p>
+                            <p class="text-[12px] text-[#ffffffe6] font-bold mt-[0.5rem]">Debian, Ubuntu</p>
+                        </a>
+                        <a href="#" class="bg-[#0066B8] text-white text-center py-[0.5rem] px-[1.5rem]">
+                            <p class="text-[18px] font-bold"><img class="w-[18px] h-[18px] inline" src="./img/download.svg" alt="Download"> .rpm</p>
+                            <p class="text-[12px] text-[#ffffffe6] font-bold mt-[0.5rem]">Red Hat, Fedora, SUSE</p>
+                        </a>
+                    </div>
+                    <div class="mt-[1rem]">
+                        <table class="table-auto text-[12px]">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center text-[1rem] text-[#444444] font-[600]">.deb</td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm32</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center text-[1rem] text-[#444444] font-[600]">.rpm</td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm32</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center text-[1rem] text-[#444444] font-[600]">.tar.gz</td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">x64</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm32</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Arm64</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center text-[1rem] text-[#444444] font-[600]">Snap</td>
+                                    <td colspan="2"><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Snap Store</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class=""><img class="w-[100px] h-[100px]" src="./img/apple-logo.svg" alt="Windows"></div>
+                    <a href="#" class="bg-[#0066B8] text-white text-center mt-[1.5rem] py-[0.5rem] px-[5rem]">
+                        <p class="text-[18px] font-bold"><img class="w-[18px] h-[18px] inline" src="./img/download.svg" alt="Download"> Mac</p>
+                        <p class="text-[12px] text-[#ffffffe6] font-bold mt-[0.5rem]">macOS 10.11+</p>
+                    </a>
+                    <div class="mt-[1rem]">
+                        <table class="table-auto text-[12px]">
+                            <tbody>
+                                <tr>
+                                    <td class="text-center text-[1rem] text-[#444444] font-[600]">.zip</td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Universal</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Intel Chip</a></td>
+                                    <td><a href="#" class="bg-[#0066B8] text-white p-[0.2rem] rounded">Apple Silicon</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- T&C -->
+        <section class="bg-[#F5F5F5]">
+            <div class="w-[95%] py-[3rem] mx-auto lg:w-[65%]">
+                <div class="flex flex-col justify-around gap-[1rem] text-[#444444] lg:flex-row">
+                    <div class="text-center">
+                        <p class="text-[21px]">Want new features sooner?</p>
+                        <p class="text-[18px]">Get the <a href="https://code.visualstudio.com/insiders" class="text-[#0071BC] hover:underline">Insiders build</a> instead.</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-[21px]">Use <a href="https://vscode.dev/" class="text-[#0071BC] hover:underline">vscode.dev</a> for quick edits online!</p>
+                        <p class="text-[18px]">GitHub, Azure Repos, and local files.</p>
+                    </div>
+                </div>
+                <div class="text-[12px] text-center text-[#6C6C6C] mt-[5rem]">
+                    <p class="my-[1rem] font-bold">LICENSE AND PRIVACY TERMS</p>
+                    <p class="text-[14px] leading-[2.75] lg:mx-[18rem]">By downloading and using Visual Studio Code, you agree to the <a href="https://code.visualstudio.com/License/" class="text-[#0071BC] hover:underline">license terms</a> and <a href="https://privacy.microsoft.com/privacystatement" class="text-[#0071BC] hover:underline">privacy statement</a>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a href="https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-crash-reporting" class="text-[#0071BC] hover:underline">How to Disable Crash Reporting</a> to learn how to disable it.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#333333] text-white">
+            <div class="flex flex-col justify-between w-[95%] mx-auto lg:flex-row lg:w-[65%]">
+                <div class="flex items-center gap-[1.5rem] py-[1.5rem] text-[14px]">
+                    <p class="">Hello from Seattle.</p>
+                    <a href="https://twitter.com/code" class="hover:text-[#A8A0FF]">Follow @code</a>
+                    <div class="text-[11px] flex items-center gap-[0.2rem]">
+                        <a href="https://github.com/Microsoft/vscode/" class="bg-[#EEEEEE] text-[#333333] p-[0.2rem] rounded">
+                            <img src="./img/github.svg" alt="Gihub" class="w-[14px] h-[14px] mx-[0.1rem] inline">
+                            <p class="inline">Star</p>
+                        </a>
+                        <a href="https://github.com/Microsoft/vscode/stargazers" class="bg-[#EEEEEE] text-[#333333] p-[0.2rem] rounded">139,797</a>
+                    </div>
+                </div>
+                <div class="flex gap-[1.5rem] py-[1.5rem] text-[12px]">
+                    <a href="#" class="hover:text-[#A8A0FF]">Support</a>
+                    <a href="https://privacy.microsoft.com/privacystatement" class="hover:text-[#A8A0FF]">Privacy</a>
+                    <a href="https://www.microsoft.com/legal/terms-of-use" class="hover:text-[#A8A0FF]">Terms of Use</a>
+                    <a href="https://code.visualstudio.com/License" class="hover:text-[#A8A0FF]">License</a>
+                    <div>
+                        <a href="https://www.microsoft.com/">
+                            <img class="h-[20px]" src="./img/microsoft-logo.png" alt="Microsoft">
+                        </a>
+                        <p class="">&copy; 2022 Microsoft</p>
+                    </div>
+                </div>
+            </div>
+        </footer>  
     </body>
 </html>
