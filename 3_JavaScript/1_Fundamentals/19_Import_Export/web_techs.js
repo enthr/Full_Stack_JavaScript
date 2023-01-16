@@ -1,0 +1,1 @@
+export const web_techs = ["HTML", "CSS", "JavaScript", "React", "Vue", "Angular", "Node.js", "Express", "MongoDB", "PostgreSQL"];
