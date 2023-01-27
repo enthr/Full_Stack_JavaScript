@@ -1,4 +1,4 @@
-# Credit Card Landing Page
+# Credit Card Landing Page - HTML, CSS, Tailwind
 
 Output:
 

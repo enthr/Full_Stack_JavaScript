@@ -1,4 +1,4 @@
-# VSCode Landing Page
+# VSCode Landing Page - HTML, CSS, Tailwind
 
 Output:
 
