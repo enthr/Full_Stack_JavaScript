@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./main.js" type="module"></script>
+    </head>
+    <body class="bg-[#212121]">
+        <header class="bg-[#2962FF] lg:h-[10vh]">
+            <nav class="container mx-auto py-4 lg:h-full">
+                <form method="get" class="lg:h-full" id="form">
+                    <div class="flex justify-center items-center gap-6 h-full">
+                        <label for="location" class="text-[#FAFAFA] text-xl py-2 font-bold">Weather Location</label>
+                        <input type="text" name="location" id="location" placeholder="City"
+                            class="bg-[#FAFAFA] text-[#212121] py-2 px-4 outline-none lg:w-[50%]">
+                        <button type="submit" class="text-[#FAFAFA] bg-[#FFAB00] py-2 px-8 font-bold">Search</button>
+                    </div>
+                </form>
+            </nav>
+        </header>
+
+        <main class="lg:h-[80vh]">
+            <section class="container mx-auto py-8 lg:h-full">
+                <div class="lg:w-[75%] mx-auto lg:h-full">
+                    <h1 class="text-[2rem] text-[#FAFAFA] font-bold text-center">Current Weather</h1>
+
+                    <!-- section for displaying the city weather data -->
+                    <div class="flex flex-col justify-evenly h-full">
+
+                        <!-- displaying the country details -->
+                        <div class="flex justify-between items-center">
+
+                            <!-- displaying the country name -->
+                            <div>
+                                <p class="text-[1.25rem] text-[#FAFAFA] font-bold">Country Name</p>
+                                <p id="countryName" class="text-[#FAFAFA] mt-2">__</p>
+                            </div>
+
+                            <!-- displaying the state name -->
+                            <div>
+                                <p class="text-[1.25rem] text-[#FAFAFA] font-bold">State Name</p>
+                                <p id="stateName" class="text-[#FAFAFA] mt-2">__</p>
+                            </div>
+
+                            <!-- displaying the city name -->
+                            <div class="card">
+                                <p class="text-[1.25rem] text-[#FAFAFA] font-bold">City Name</p>
+                                <p id="cityName" class="text-[#FAFAFA] mt-2">__</p>
+                            </div>
+                        </div>
+
+                        <!-- displaying the weather status -->
+                        <div class="flex justify-between items-center">
+                            <!-- displaying the humidity -->
+                            <div>
+                                <p class="text-[1.25rem] text-[#FAFAFA] font-bold">Humidity</p>
+                                <p id="humidity" class="text-[#FAFAFA] mt-2">__</p>
+                            </div>
+
+                            <!-- displaying the wind speed -->
+                            <div>
+                                <p class="text-[1.25rem] text-[#FAFAFA] font-bold">Wind Speed</p>
+                                <p class="text-[#FAFAFA] mt-2"><span id="windSpeed">__</span> KMPH</p>
+                            </div>
+
+                            <!-- displaying the current temprature in celcius -->
+                            <div>
+                                <p class="text-[1.25rem] text-[#FAFAFA] font-bold">Temprature</p>
+                                <!-- unicode for degree celcius symbol -->
+                                <p class="text-[#FAFAFA] mt-2"><span id="temprature">__</span>&#8451;</p>
+                            </div>
+
+                            <!-- displaying the weather condition -->
+                            <div>
+                                <img width="50px" id="logoImage" src="" alt="Icon" />
+                                <p id="weatherStatus" class="text-[#FAFAFA] mt-2">__</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="lg:h-[10vh]">
+            <nav class="container mx-auto py-4 lg:h-full">
+                <div class="flex justify-center items-center lg:h-full">
+                    <a href="https://github.com/enthr" target="_blank" class="text-[#FFAB00] font-bold">Developed By Jaimin Prajapati 👌</a>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>
