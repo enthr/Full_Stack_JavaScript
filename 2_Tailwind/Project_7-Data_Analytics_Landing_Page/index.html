@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logo | Data Analytics</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="font-['Roboto'] w-full">
+        <!-- Header -->
+        <header style="background: linear-gradient(to bottom, #FFFFFF, #E1F2FF);clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);">
+            <!-- Navbar -->
+            <nav class="py-8 lg:py-6">
+                <!-- Container -->
+                <div class="container mx-auto">
+                    <div class="flex flex-col gap-8 justify-between items-center lg:flex-row lg:gap-0">
+                        <div><img src="./assets/Logo.png" alt="Logo"></div>
+                        <div class="flex flex-col items-center gap-8 lg:flex-row">
+                            <a href="#">About</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Login</a>
+                            <a href="#" class="border-2 border-[#6F35CF] text-[#6F35CF] py-2 px-6 font-medium rounded-full">Start Free Trial</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="py-8 lg:py-28">
+                <!-- Container -->
+                <div class="container mx-auto pb-8 lg:pb-28">
+                    <div class="flex flex-col justify-between items-center lg:flex-row">
+                        <div class="flex flex-col items-start lg:w-[40%]">
+                            <a href="#" class="bg-[#F7F1FF] text-[#6F35CF] flex items-center gap-4 py-2 px-4 rounded-full"><img src="./assets/edit-brightness.svg" alt="Notification"><span class="underline">v3.1 Realeased. Learn More.</span></a>
+                            <h1 class="font-bold text-5xl py-4">Your data with real-time analytics</h1>
+                            <p class="text-[#757575] py-6">Harness the potential of Big Data Analytics & Cloud Services and become a data-driven organization with Needle tail.</p>
+                            <div class="flex flex-row gap-6">
+                                <a href="#" class="bg-[#6F35CF] text-[#FFFFFF] py-2 px-8 rounded-full">Start Free Trial</a>
+                                <a href="#" class="bg-[#FFFFFF] text-[#6F35CF] py-2 px-8 rounded-full">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="mb-32 lg:mb-0"><img src="./assets/image1.png" alt="Main Image"></div>
+                    </div>
+                </div>
+            </section>
+        </header>
+    </body>
 </html>
