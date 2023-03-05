@@ -1,4 +1,4 @@
 # Project-1 React Router
 
 ## Screenshot
-![Screenshot](Screenshot/Screenshot.png)
+![Screenshot](Screenshot/Screenshot-min.png)
