@@ -32,7 +32,7 @@ const TaskList = ({ label, color, icon, tasks, status }) => {
 				<TaskListChip label={label} color={color} icon={icon} />
 				<Box width='100%' height='90%' overflow='auto' ref={drop}>
 					{tasks.map(({ id, title, description }) => (
-						<Task key={id} title={title} description={description} id={id} />
+						<Task key={id} title={title} description={description} id={id} status={status} />
 					))}
 				</Box>
 				<TaskListAddButton status={status} />

@@ -18,10 +18,13 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import CloseIcon from '@mui/icons-material/Close';
 import SaveIcon from '@mui/icons-material/Save';
+import TaskIcon from '@mui/icons-material/Task';
+import LoopIcon from '@mui/icons-material/Loop';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
-import { deleteTask, editTask } from '../features/tasks/taskSlice';
+import { deleteTask, editTask, moveTask } from '../features/tasks/taskSlice';
 
-const Task = ({ id, title, description }) => {
+const Task = ({ id, title, description, status }) => {
 	const dispatch = useDispatch();
 	const [taskTitle, setTaskTitle] = useState(title);
 	const [taskDescription, setTaskDescription] = useState(description);
@@ -91,6 +94,24 @@ const Task = ({ id, title, description }) => {
 					<DeleteIcon />
 					<Typography variant='body1'>Delete Task</Typography>
 				</MenuItem>
+				{status === 0 ? (null) : (
+					<MenuItem onClick={() => dispatch(moveTask({ id: id, status: 0 }))} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1 }}>
+						<TaskIcon />
+						<Typography variant='body1'>Move To To-Do</Typography>
+					</MenuItem>
+				)}
+				{(status === 1) ? (null) : (
+					<MenuItem onClick={() => dispatch(moveTask({ id: id, status: 1 }))} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1 }}>
+						<LoopIcon />
+						<Typography variant='body1'>Move To In-Progress</Typography>
+					</MenuItem>
+				)}
+				{(status === 2) ? (null) : (
+					<MenuItem onClick={() => dispatch(moveTask({ id: id, status: 2 }))} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1 }}>
+						<CheckCircleIcon />
+						<Typography variant='body1'>Move To Completed</Typography>
+					</MenuItem>
+				)}
 			</Menu>
 
 			{editForm ? (
