@@ -1,0 +1,9 @@
+@import url(https://fonts.bunny.net/css?family=poppins:300,400,500,600,700);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
