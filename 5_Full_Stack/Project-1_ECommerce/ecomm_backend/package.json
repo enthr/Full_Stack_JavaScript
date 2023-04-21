@@ -1,0 +1,26 @@
+{
+    "name": "ecomm_backend",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Backend For E-Commerce Web App",
+    "main": "./src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon ./src/index.js",
+        "start": "node ./src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/enthr/Full_Stack_JavaScript/5_Full_Stack"
+    },
+    "author": "Jaimin Prajapati",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "fastify": "^4.15.0",
+        "mongoose": "^7.0.4"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    }
+}
