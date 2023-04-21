@@ -5,14 +5,14 @@ const collectionSchema = new mongoose.Schema({
     name: {
         type: String,
         trim: true,
-        maxLength: [200, "Collection Name should be less than 200 characters"],
+        maxLength: [150, "Collection Name should be less than 150 characters"],
         required: [true, "Collection Name is Required"],
         lowercase: true
     },
     slug: {
         type: String,
         trim: true,
-        maxLength: [200, "Collection Slug should be less than 200 characters"],
+        maxLength: [100, "Collection Slug should be less than 100 characters"],
         required: [true, "Collection Slug is Required"],
         lowercase: true,
         unique: true
@@ -40,8 +40,8 @@ const collectionSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ["active", "inactive", "deleted"],
-        default: "active"
+        enum: ["ACTIVE", "INACTIVE"],
+        default: "ACTIVE"
     }
 }, { timestamps: true });
 

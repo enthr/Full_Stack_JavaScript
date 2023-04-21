@@ -25,7 +25,7 @@ app.setErrorHandler((error, request, reply) => {
     if (error.name === "ValidationError") {
         // console.error("Validation Error: ", error);
         app.log.error("Validation Error: ", error);
-        reply.code(400).send({ message: "Invalid Input Data" });
+        reply.code(400).send({ message: error.message });
         return;
     }
 
