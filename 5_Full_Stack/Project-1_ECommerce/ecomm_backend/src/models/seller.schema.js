@@ -173,6 +173,7 @@ const sellerSchema = new mongoose.Schema({
 
 // Define virtual for calculating rating
 sellerSchema.virtual("rating").get(function () {
+    if (numProducts === 0) return 0;
     const id = this._id;
     const reviewRating = this.products.reduce(function (acc, product) {
         const total = acc + product.reviews.reduce(function (acc, review) {
@@ -183,7 +184,6 @@ sellerSchema.virtual("rating").get(function () {
         return total;
     }, 0);
     const numProducts = this.products.length;
-    if (numProducts === 0) return 0;
     return reviewRating / numProducts;
 });
 
