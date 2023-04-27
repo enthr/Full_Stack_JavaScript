@@ -25,7 +25,6 @@ const collectionSchema = new mongoose.Schema({
     imgUrl: {
         type: String,
         trim: true,
-        required: [true, "Collection Image URL is Required"],
         validate: {
             validator: function (value) {
                 return isURL(value);
@@ -33,15 +32,20 @@ const collectionSchema = new mongoose.Schema({
             message: "Collection Image URL is Invalid"
         }
     },
-    owner: {
+    products: [{
+        _id: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Product"
+        }
+    }],
+    sellerId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "SELLER",
-        required: [true, "Collection Owner is Required"]
+        ref: "Seller",
+        required: [true, "Seller ID is Required"]
     },
-    status: {
-        type: String,
-        enum: ["ACTIVE", "INACTIVE"],
-        default: "ACTIVE"
+    isActive: {
+        type: Boolean,
+        default: true
     }
 }, { timestamps: true });
 
