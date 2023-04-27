@@ -23,19 +23,19 @@ const invoiceSchema = new mongoose.Schema({
     },
     items: [{
         productId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Product",
-            required: [true, "Product ID is required"]
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Product",
+          required: [true, "Product ID is required"]
         },
         price: {
-            type: Number,
-            required: [true, "Product price is required"],
-            min: [0, "Product price cannot be less than 0"]
+          type: Number,
+          required: [true, "Product price is required"],
+          min: [0, "Product price cannot be less than 0"]
         },
         quantity: {
-            type: Number,
-            required: [true, "Product quantity is required"],
-            min: [0, "Product quantity cannot be less than 0"]
+          type: Number,
+          required: [true, "Product quantity is required"],
+          min: [0, "Product quantity cannot be less than 0"]
         }
     }],
     subTotal: {
