@@ -61,8 +61,7 @@ const userSchema = new mongoose.Schema({
     },
     isVerified: {
         type: Boolean,
-        default: false,
-        select: false
+        default: false
     },
     verificationToken: {
         type: String,
@@ -74,8 +73,7 @@ const userSchema = new mongoose.Schema({
     },
     isBlocked: {
         type: Boolean,
-        default: false,
-        select: false
+        default: false
     },
     forgotPasswordToken: {
         type: String,
