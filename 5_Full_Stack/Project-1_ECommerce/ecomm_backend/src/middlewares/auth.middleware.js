@@ -27,3 +27,11 @@ export const isLoggedIn = asyncPreHandler(async (request, _reply, done) => {
         done(new CustomError("Not Authorized", 401), false);
     }
 });
+
+export const authorize = (...requiredRoles) => asyncPreHandler(async (request, _reply, done) => {
+    if (!requiredRoles.includes(request.user.role)) {
+        done(new CustomError(`User Role ${request.user.role} Is Not Authorized To Access This Route`, 403));
+    }
+
+    done(null, true);
+});
